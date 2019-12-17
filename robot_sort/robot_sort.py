@@ -99,6 +99,25 @@ class SortingRobot:
         # Fill this out
         pass
 
+    while self.light_is_on() == False:
+        self.light_is_on()                      # sets light is on to true... loop will end when sorting is done
+
+        while self.can_move_right()
+        self.swap_item() 
+                               # swap items
+        self.move_right()                       # then move right
+        if self.compare_item() == 1:            # if its of greater value
+            self.swap_item()                    #swap  the itme
+            self.move_left()                    # move to the left
+            self.swap_item()                    # swap the item again
+            self.move_right()                   #move to the right 
+            self.set_light_off()                # restart the loop
+        else:
+            self.move_left()                    # if itsd smaller value, move left
+            self.swap_item()                    # swap item
+            self.move_right()                   # move to the next item
+        while self.can_move_left()
+            self.move_left()                    # go back to the start
 
 if __name__ == "__main__":
     # Test our your implementation from the command line
